@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Password Gen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h2>Password Gen</h2>
+            <label for="upper" class="upperLab">
+                <span>Uppercase characters</span> <input type="checkbox" name="upper" id="upper">
+            </label>
+            <label for="lower" class="lowerLab">
+                <span>Lowercase characters</span> <input type="checkbox" name="lower" id="lower">
+            </label>
+            <label for="symbols" class="symbolLab">
+                <span>Symbols</span> <input type="checkbox" name="symbol" id="symbol">
+            </label>
+            <label for="numbers" class="numberLab">
+                <span>Numbers</span> <input type="checkbox" name="numbers" id="numbers">
+            </label>
+
+            <button type="button" onclick="generatePass()" id="submitBtn">Generate Password</button>
+
+
+        <h4 id="result">Your Password</h4>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
